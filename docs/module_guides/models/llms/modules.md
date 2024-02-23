@@ -56,6 +56,16 @@ maxdepth: 1
 /examples/llm/cohere.ipynb
 ```
 
+## Dashscope
+
+```{toctree}
+---
+maxdepth: 1
+---
+/examples/llm/dashscope.ipynb
+/examples/multi_modal/dashscope_multi_modal.ipynb
+```
+
 ## EverlyAI
 
 ```{toctree}
@@ -63,6 +73,15 @@ maxdepth: 1
 maxdepth: 1
 ---
 /examples/llm/everlyai.ipynb
+```
+
+## Fireworks
+
+```{toctree}
+---
+maxdepth: 1
+---
+/examples/llm/fireworks.ipynb
 ```
 
 ## Gradient
@@ -138,6 +157,15 @@ maxdepth: 1
 maxdepth: 1
 ---
 /examples/llm/localai.ipynb
+```
+
+## MariTalk
+
+```{toctree}
+---
+maxdepth: 1
+---
+/examples/llm/maritalk.ipynb
 ```
 
 ## MistralAI
