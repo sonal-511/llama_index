@@ -67,11 +67,6 @@ def _get_elasticsearch_client(
             "Both es_url and cloud_id are defined. Please provide only one."
         )
 
-    if es_url and cloud_id:
-        raise ValueError(
-            "Both es_url and cloud_id are defined. Please provide only one."
-        )
-
     connection_params: Dict[str, Any] = {}
 
     if es_url:
@@ -572,8 +567,8 @@ class ElasticsearchStore(BasePydanticVectorStore):
                 logger.warning(
                     f"Could not parse metadata from hit {hit['_source']['metadata']}"
                 )
-                node_info = source.get("node_info")
-                relationships = source.get("relationships")
+                node_info = source.get("node_info","")
+                relationships = source.get("relationships","")
                 start_char_idx = None
                 end_char_idx = None
                 if isinstance(node_info, dict):
